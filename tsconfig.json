@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "downlevelIteration": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/components/templates/ProductsTemplate.tsx",
+    "src/components/ui-components/FilterSidePanel.jsx",
+    "src/components/ui-components/product/ProductViewTabs.jsx",
+    "src/components/ui-components/Navbar.jsx",
+    "src/context/auth-context/AuthContext.js",
+    "src/components/wrappers/AppWrapper.jsx",
+    "src/components/ui-components/cta/RootCTA.tjsx",
+    "src/components/ui-components/carousel/BasicCarousel.tsx",
+    "src/components/ui-components/store/StoreNavbar.tsx"
+  ],
+  "exclude": ["node_modules"]
+}
